@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>honolulu dinner cruise</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="user-scalable = yes, width=320, initial-scale=1">
+  </head>
+  <body>
+    <main>
+      <nav class="main-nav" id="main-nav">
+           <section>
+               <ul>
+                   <li class="home"><a href="#"><span>home</span></a></li>
+                   <li><a href="#" class="parentAnchor">cruises</a></li>
+                   <li><a class="parentAnchor" href="#">about us</a></li>
+                   <li><a class="parentAnchor" href="#">blog</a></li>
+                   <li><a class="parentAnchor" href="#">cart</a></li>
+               </ul>
+           </section>
+       </nav>
+    <div class="wrapper">
+      <!-- ========== masthead ========== -->
+      <div class="masthead">
+        <section>
+          <a href="#" class="logo">
+            <img src="images/honolulu-dinner-cruises-logo.jpg" alt="" >
+            <h1>honolulu <br> dinner cruises</h1>
+          </a>
+          <a href="#" class="cart-link"><i class="material-icons">shopping_cart</i></a>
+          <p id="tool-tip-desktop">find what you're looking for</p>
+          <button type="button" name="button" class="menu-btn" onclick="idToggle('menu-btn','active');idToggle('main-nav','active')" id="menu-btn">
+            <hr class="menu-btn-hr-1" />
+            <hr class="menu-btn-hr-2" />
+            <hr class="menu-btn-hr-3" />
+          </button>
+          <nav class="phone">
+            <ul>
+              <li class="phone-left"><a href="tel:+1-866-482-9775"><span>toll free</span> 1-866-482-9775</a></li>
+              <li class="phone-right"><a href="tel:808-892-2082"><span>local</span> 808-892-2082</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+        <!-- ========== banner ========== -->
+        <div id="banner">
+          <header>
+            <h2>discounts on<span>oahu dinner cruises</span></h2>
+            <a href="#" id="book-now">reservations</a>
+          </header>
+          <div id="framecont" class="frame-cont">
+            <div class="frameShadow top"></div>
+            <div class="frameShadow bottom"></div>
+            <div class="frame" id="frame">
+              <section class="slide" id="slide-1">
+                <div class="test">
+                  <img src="images/honolulu_oahu_dinner_cruise_cocktail_toast.png" alt="">
+                </div>
+              </section>
+              <section class="slide" id="slide-2">
+                <div class="test">
+                  <img src="images/dinner_cruise_honolulu_oahu_seowords.png" alt="">
+                </div>
+              </section>
+              <section class="slide" id="slide-3">
+                <div class="test">
+                  <img src="images/honolulu_dinner_cruise_sunset.png" alt="">
+                </div>
+              </section>
+              <section class="slide" id="slide-4">
+                <div class="test">
+                  <img src="images/honolulu_dinner_cruise_luau_show_oahu.png" alt="">
+                </div>
+              </section>
+              </div>
+          </div>
+            <div class="frame-nav">
+              <button type="button" id="navBtnBack" onclick="sliderPlus(-1)"><i class="material-icons">arrow_back_ios</i></button>
+              <button type="button" class="frame-nav-btn" name="button" onclick="sliderCurrent(1);"></button>
+              <button type="button" class="frame-nav-btn" name="button" onclick="sliderCurrent(2);"></button>
+              <button type="button" class="frame-nav-btn" name="button" onclick="sliderCurrent(3);"></button>
+              <button type="button" class="frame-nav-btn" name="button" onclick="sliderCurrent(4);"></button>
+              <button type="button" id="navBtnForward" onclick="sliderPlus(1)"><i class="material-icons">arrow_forward_ios</i></button>
+            </div>
+          </div>
+      <!-- ============================================================ -->
+      <!-- ============================================================ -->
+      <!-- ============================================================ -->
+      <div id="product-collection">
+        <div class="category-header">
+          star of honolulu<br>
+          <span>dinner cruises</span>
+        </div>
+        <div class="category">
+          <!-- =============== -->
+          <div class="vendor-section">
+            <section>
+              <div class="product-wrapper">
+                <div class="product" id="product-1">
+                  <header>sunset and dinner show
+                  <br/>
+                  <span class="price">from <b>$000</b> </span>
+                  </header>
+                  <img src="images/star_of_honolulu_sunset_and_dinner_show.png" alt="">
+                </div>
+                <ul>
+                  <li><a href="#">reservations</a></li>
+                  <li><button type="button" name="button" onclick="idToggle('dtl-1','active')">learn more</button></li>
+                </ul>
+              </div>
+              <div class="product-wrapper">
+                <div class="product" id="product-2">
+                  <header>three star dinner cruise
+                  <br/>
+                  <span class="price">from <b>$000</b> </span>
+                  </header>
+                  <img src="images/star_of_honolulu_three_star_dinner_cruise.png" alt="">
+                </div>
+                <ul>
+                  <li><a href="#">reservations</a></li>
+                  <li><button type="button" name="button" onclick="idToggle('dtl-2','active')">learn more</button></li>
+                </ul>
+              </div>
+              <div class="product-wrapper">
+                <div class="product" id="product-3">
+                  <header>five star dinner cruise
+                  <br/>
+                  <span class="price">from <b>$000</b> </span>
+                  </header>
+                  <img src="images/star_of_honolulu_five_star_dinner_cruise.png" alt="">
+                </div>
+                <ul>
+                  <li><a href="#">reservations</a></li>
+                  <li><button type="button" name="button" onclick="idToggle('dtl-2','active')">learn more</button></li>
+                </ul>
+              </div>
+            </section>
+          </div>
+
+
+          <div class="product-detail-wrapper" id="dtl-1">
+            <div class="product-detail">
+              <header> <h3>title<br>vendor vendoer</h3> <button type="button" name="button" onclick="idToggle('dtl-1','active')"></button> </header>
+              <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>duration <b>0 hours</b></p>
+                <ul>
+                  <li>was <span>$000</span></li>
+                  <li>now <span>$000</span> </li>
+                </ul>
+                <a href="#">book now</a>
+              </article>
+            </div>
+          </div>
+          <!-- =============== -->
+          <div class="category-bottom">
+            <h3>more star of honolulu reservations</h3>
+            <a href="#">click here</a>
+          </div>
+        </div>
+        <!-- =============== -->
+        <div class="category-header">
+          more dinner cruises<br>
+        </div>
+        <div class="category">
+          <!-- =============== -->
+          <div class="vendor-section">
+            <section>
+              <div class="product-wrapper">
+                <div class="product" id="product-1">
+                  <header>product-vendor
+                    <p>product title</p>
+                  <br/>
+                  <span class="price">from <b>$000</b> </span>
+                  </header>
+                  <img src="images/makanai-catamaran-dinner-cruise.png" alt="">
+                </div>
+                <ul>
+                  <li><a href="#">reservations</a></li>
+                  <li><button type="button" name="button" onclick="idToggle('dtl-1','active')">learn more</button></li>
+                </ul>
+              </div>
+              <div class="product-wrapper">
+                <div class="product" id="product-2">
+                  <header>product-vendor
+                    <p>product title</p>
+                  <br/>
+                  <span class="price">from <b>$000</b> </span>
+                  </header>
+                  <img src="images/port-waikiki-friday-fireworks-dinner-sail.png" alt="">
+                </div>
+                <ul>
+                  <li><a href="#">reservations</a></li>
+                  <li><button type="button" name="button" onclick="idToggle('dtl-2','active')">learn more</button></li>
+                </ul>
+              </div>
+              <div class="product-wrapper">
+                <div class="product" id="product-3">
+                  <header>product-vendor
+                    <p>product title</p>
+                  <br/>
+                  <span class="price">from <b>$000</b> </span>
+                  </header>
+                  <img src="images/Sashimi-Fishing-Prince-Kuhio-Sunset-Dinner-Cruise.png" alt="">
+                </div>
+                <ul>
+                  <li><a href="#">reservations</a></li>
+                  <li><button type="button" name="button" onclick="idToggle('dtl-2','active')">learn more</button></li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <!-- =============== -->
+          <div class="category-bottom">
+            <h3>more honolulu dinner cruises</h3>
+            <a href="#">click here</a>
+          </div>
+        </div>
+      </div>
+      <!-- ============================================================ -->
+      <!-- ============================================================ -->
+      <div class="article-wrapper">
+      <header>catchy tagline</header>
+      <div class="article-section">
+        <div class="article-bloc" id="article-1">
+          <div class="article-img">
+            <p>featured luau: star of honolulu</p>
+            <div id="playerWrapper">
+              <div id="player"></div>
+            </div>
+            <script>
+            var tag = document.createElement('script');
+
+            tag.src="https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            var player;
+            function onYouTubeIframeAPIReady() {
+              player = new YT.Player('player', {
+                host: 'https://www.youtube.com',
+                rel: '0',
+                videoId: 'rG8aKGk7Hlg',
+                events: {
+                  'onReady': onPlayerReady,
+                  'onStateChange': onPlayerStateChange
+                },
+                playerVars: {
+                  rel:0,
+                  showInfo:0
+                }
+              });
+            }
+            function onPlayerReady(event) {
+              player.mute();
+              event.target.playVideo();
+            }
+            function onPlayerStateChange(event) {
+              if(player.getPlayerState() === 0){
+                console.log("ended");
+              }
+              if(player.getPlayerState() === 2){
+                console.log("paused");
+                $('.ytp-button.ytp-collapse').click();
+              }
+            }
+            </script>
+          </div>
+          <article>
+            <p><span>L</span>ouis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <p><span>s</span>ed itation ullamco ltate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<p>
+            </p>
+          </article>
+        </div>
+        <div class="article-bloc" id="article-2">
+          <article>
+            <p><span>P</span>olor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            <p><span>W</span>lamco laboris am dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum., sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </article>
+          <div class="article-img">
+            <img src="images/Screen Shot 2020-04-19 at 12.26.53 AM.png" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- ============================================================ -->
+      <!-- ============================================================ -->
+      <!-- ============================================================ -->
+      <!-- ============================================================ -->
+      <!-- ============================================================ -->
+      <!-- ========== coverage ========== -->
+      <div class="coverage-section">
+        <h2>why book with us</h2>
+        <ul>
+          <li id="c-1">
+            <span>
+            <i class="material-icons icon-first">laptop</i>
+            <i class="material-icons icon-second">lock</i>
+            </span>
+            <header>safe and<br>secure</header>
+            <p>Online booking system with validated privacy protection</p>
+          </li>
+          <li id="c-2">
+            <span>
+              <i class="material-icons icon-first">event</i>
+              <i class="material-icons icon-second">call</i>
+            </span>
+            <header>same day<br>reservationst</header>
+            <p>Receive a full refund if cancellation is made at least 48 hours in advance</p>
+          </li>
+          <li id="c-3">
+            <span>
+              <i class="material-icons icon-first">sentiment_satisfied_alt</i>
+            </span>
+            <header>friendly<br>support</header>
+            <p>Receive your voucher the same day after booking your activity</p>
+          </li>
+          <li id="c-4">
+            <span>
+              <i class="material-icons icon-first">undo</i>
+              <i class="material-icons icon-second">attach_money</i>
+            </span>
+            <header>money back<br>guranteed</header>
+            <p>Our representatives will help you select the best activities and ensure 100% satisfaction</p>
+          </li>
+        </ul>
+      </div>
+      <!-- ========== footer ========== -->
+      <footer class="footer">
+        <ul>
+          <li class="footer-main">
+            <img id="footer-logo" src="images/honolulu-dinner-cruises-logo.jpg" alt="">
+            <h2>honolulu dinner cruises</h2>
+            <a href="tel:1-877-357-2480" class="footer-phone">(toll free) 877 357 2480</a>
+            <hr>
+            <a href="tel:1-877-357-2480" class="footer-phone">(local) 877 357 2480</a>
+            <div class="social">
+              <a href="#"> <img src="images/facebook_twitter_youtube_instagram.png" alt="" id="social-fb" class="delayed-img">  </a>
+              <a href="#"> <img src="images/facebook_twitter_youtube_instagram.png" alt="" id="social-tw" class="delayed-img">  </a>
+              <a href="#"> <img src="images/facebook_twitter_youtube_instagram.png" alt="" id="social-yt" class="delayed-img">  </a>
+              <a href="#"> <img src="images/facebook_twitter_youtube_instagram.png" alt="" id="social-ig" class="delayed-img">  </a>
+            </div>
+          </li>
+          <li class="footer-nav">
+            <a href="#">home</a>
+            <hr>
+            <a href="#">packages</a>
+            <hr>
+            <a href="#">about</a>
+            <hr>
+            <a href="#">contact</a>
+            <hr>
+            <a href="#">cart</a>
+            <hr>
+          </li>
+          <li class="footer-nav">
+            <a href="#">site map</a>
+            <hr>
+            <a href="#">privacy policy</a>
+            <hr>
+            <a href="#">terms</a>
+            <hr>
+            <a href="#">login</a>
+            <hr>
+          </li>
+        </ul>
+        <p>Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
+      </footer>
+    </div>
+    <!-- ========== end ========== -->
+  </main>
+    <!-- <script type="text/javascript" src="scroll.js"></script> -->
+    <script type="text/javascript" src="jquery.lazy-master/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="jquery.lazy-master/jquery.lazy.plugins.min.js"></script>
+    <script type="text/javascript" src="toggle.js"></script>
+    <script type="text/javascript" src="checkpoint.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script>
+    var $eventListener = (function () {
+        'use strict';
+        if ("ontouchstart" in document.documentElement === true) {
+            return "touchstart"
+        } else {
+            return "click";
+        }
+    }());
+    var menuCont = document.getElementById("main-nav");
+    var menuBtn = document.getElementById("menu-btn");
+
+    document.addEventListener($eventListener, function (event) {
+        if (!menuCont.contains(event.target) && !visible(menuCont)) {
+            menuCont.className = "main-nav";
+            menuBtn.className = "menu-btn";
+        }
+    })
+    function visible(elem) {
+        return elem && (elem.offsetWidth === 0);
+    }
+    //===================================================//
+    var wrapper = document.getElementsByClassName('product-detail-wrapper');
+    function toggleOutside(e){
+      if(e.target.classList.contains('active') && e.target !== e.target.firstChild){
+        idToggle(this.id,'active');
+      }
+    }
+
+    for (var i = 0 ; i < wrapper.length; i++) {
+      wrapper[i].addEventListener('click',toggleOutside,false);
+    }
+    // =================
+    </script>
+  </body>
+</html>
